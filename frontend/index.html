@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Talk</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      .recommendations {
+        margin-top: 20px;
+      }
+      .recommendation-btn {
+        margin: 5px;
+        transition: all 0.3s ease;
+      }
+      .recommendation-btn:hover {
+        transform: scale(1.1);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="chat-box">
+        <div id="chat-window" class="chat-window"></div>
+        <div class="recommendations">
+          <h5>Recommended Questions:</h5>
+          <button class="btn btn-primary recommendation-btn">
+            How to start coding?
+          </button>
+          <button class="btn btn-primary recommendation-btn">
+            What programming language should I learn?
+          </button>
+          <button class="btn btn-primary recommendation-btn">
+            What are some good coding practices?
+          </button>
+        </div>
+        <input
+          id="chat-input"
+          class="form-control"
+          type="text"
+          placeholder="Type a message..."
+        />
+        <button id="send-button" class="btn btn-primary">Send</button>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
